@@ -15,9 +15,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          persist-credentials: false
+          持久凭证：false
+      -名称：同步xmly_speed
+      
 
-      - name: sync xmly_speed
+
+
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
